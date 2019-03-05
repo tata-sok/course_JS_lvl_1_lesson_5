@@ -1,0 +1,144 @@
+main {
+    max-width: 450px;
+    padding: 30px 30px 30px;
+    margin: 50px auto 30px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.chess_even, .chess_odd {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #8A5745;
+}
+
+.chess_even:nth-child(even) {
+	background-color: #8A5745;
+}
+
+.chess_odd:nth-child(odd) {
+	background-color: #8A5745;
+}
+
+.chess_even:nth-child(1) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 270px -23px;
+    background-size: 850%;
+}
+
+.chess_even:nth-child(2) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 559px -23px;
+    background-size: 850%;
+}
+
+.chess_even:nth-child(3) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 203px -23px;
+    background-size: 850%;
+}
+
+.chess_even:nth-child(4) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 338px -23px;
+    background-size: 850%;
+}
+
+.chess_even:nth-child(5) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 407px -23px;
+    background-size: 850%;
+}
+
+.chess_even:nth-child(6) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 628px -23px;
+    background-size: 850%;
+}
+
+.chess_even:nth-child(7) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 558px -23px;
+    background-size: 850%;
+}
+
+.chess_even:nth-child(8) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 696px -23px;
+    background-size: 850%;
+}
+
+.chess_odd:nth-child(9),
+.chess_odd:nth-child(10),
+.chess_odd:nth-child(11),
+.chess_odd:nth-child(12),
+.chess_odd:nth-child(13),
+.chess_odd:nth-child(14),
+.chess_odd:nth-child(15),
+.chess_odd:nth-child(16) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 69px -23px;
+    background-size: 850%;
+} 
+
+.chess_even:nth-child(49),
+.chess_even:nth-child(50),
+.chess_even:nth-child(51),
+.chess_even:nth-child(52),
+.chess_even:nth-child(53),
+.chess_even:nth-child(54),
+.chess_even:nth-child(55),
+.chess_even:nth-child(56) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 69px -80px;
+    background-size: 850%;
+}
+
+.chess_odd:nth-child(57) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 270px -80px;
+    background-size: 850%;
+}
+
+.chess_odd:nth-child(58) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 559px -80px;
+    background-size: 850%;
+}
+
+.chess_odd:nth-child(59) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 203px -80px;
+    background-size: 850%;
+}
+
+.chess_odd:nth-child(60) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 338px -80px;
+    background-size: 850%;
+}
+
+.chess_odd:nth-child(61) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 407px -80px;
+    background-size: 850%;
+}
+
+.chess_odd:nth-child(62) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 628px -80px;
+    background-size: 850%;
+}
+
+.chess_odd:nth-child(63) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 558px -80px;
+    background-size: 850%;
+}
+
+.chess_odd:nth-child(64) {
+	background-image: url(../img/chess-26774.svg);
+    background-position: 696px -80px;
+    background-size: 850%;
+}
