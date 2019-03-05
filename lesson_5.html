@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson_5</title>
+</head>
+<body>
+	<button id = "button_1" onclick="btn_1()">Hello</button>
+	<button id = "button_2" onclick="btn_2()"><b>Hello</b></button>
+	<button id = "button_4" onclick="btn_3()">Hello</button><b>Hello</b>
+
+	<h2>Заголовок</h2>
+	<ul id ="ul_1">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<h3>Простой калькулятор</h3>
+	<input id = "var_1" type="text"> <span id = "operation">?</span> <input id = "var_2"  type="text"> = <span id = "rezult" >результат</span> <br>
+	<span>Нажми на одну из кнопок арифметических операций, чтобы получить результат</span> <br>
+	<button class = "operation" value = "+" onclick="button_sum()">+</button> 
+	<button class = "operation" value = "-" onclick="button_diff()">-</button> 
+	<button class = "operation" value = "*" onclick="button_mult()">*</button> 
+	<button class = "operation" value = "/" onclick="button_div()">/</button> 
+
+	
+	<script>
+		function btn_1() {
+			document.getElementById('button_1').innerText = 'Привет!';
+		}
+		function btn_2() {
+			document.getElementById('button_2').innerHTML = '<h3>Привет!</h3>';
+
+		}
+		function btn_3() {
+			document.body.innerHTML = '<h3>Привет!</h3>';
+
+		}
+
+
+		var list = document.getElementsByTagName('li');
+		//console.log(list.length);
+		for (var i = 0; i < list.length; i++) {
+			list[i].innerHTML = 'list ' + [i + 1];
+		}
+
+
+		var myList = document.createElement('li');
+		var container = document.getElementById('ul_1');
+		container.prepend(myList);
+		container.firstElementChild.innerHTML = 'Первый элемент списка';
+		
+		//console.log(list.length);
+
+
+
+
+		var btnOperation = document.getElementsByClassName('operation');
+		var inputRezult = document.getElementById('rezult');
+		var inputOperation = document.getElementById('operation');
+		
+
+		function button_sum() {
+			rezult = var_1.value - (-1) * var_2.value;
+			inputOperation.innerText = '+';
+			inputRezult.innerText = rezult;
+		}
+
+		function button_diff() {
+			rezult = var_1.value - var_2.value;
+			inputOperation.innerText = '-';
+			inputRezult.innerText = rezult;
+		}
+
+		function button_mult() {
+			rezult = var_1.value * var_2.value;
+			inputOperation.innerText = '*';
+			inputRezult.innerText = rezult;
+		}
+
+		function button_div() {
+			rezult = var_1.value / var_2.value;
+			inputOperation.innerText = '/';
+			inputRezult.innerText = rezult;
+		}
+
+
+		
+	</script>
+</body>
+</html>
